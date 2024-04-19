@@ -3,3 +3,19 @@
 // Examples (input --> output):
 // "hello case" --> "HelloCase"
 // "camel case word" --> "CamelCaseWord"
+package main 
+import (
+    "fmt"
+    "strings"
+    )
+    func CamelCase(s string) string {
+        words := strings.Split(s, " ")
+        for i, word := range words {
+            words[i] = strings.Title(word)
+        }
+        return strings.Join(words, "")
+    }
+    func main() {
+	fmt.Println(CamelCase("hello case"))       // "HelloCase"
+	fmt.Println(CamelCase("camel case word")) // "CamelCaseWord"
+}
