@@ -15,3 +15,29 @@
 // C          100
 // D          500
 // M          1,000
+package main
+
+import "fmt"
+
+func intToRoman(num int) string {
+    values := []int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
+    numerals := []string{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"}
+
+    result := ""
+
+    for i, val := range values {
+        for num >= val {
+            num -= val
+            result += numerals[i]
+       }
+    }
+
+    return result
+}
+
+func main() {
+    fmt.Println(intToRoman(1001))  // M
+    fmt.Println(intToRoman(1990))  // MCMXC
+    fmt.Println(intToRoman(2008))  // MMVIII
+    fmt.Println(intToRoman(1666))  // MDCLXVI
+}
