@@ -8,6 +8,9 @@ import (
     "fmt"
     "strings"
     )
+// func CamelCase(s string) string {
+// 	return strings.Replace(strings.Title(s)," ","",-1)
+// }
     func CamelCase(s string) string {
         words := strings.Split(s, " ")
         for i, word := range words {
