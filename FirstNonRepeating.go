@@ -25,6 +25,16 @@ func firstNonRepeatingLetter(words string) string {
       }
     return ""
 }
+// func FirstNonRepeating(str string) string {
+//     for _, c := range str {
+//         if strings.Count(strings.ToLower(str), strings.ToLower(string(c))) < 2 {
+// 	          return string(c)
+// 	      }
+//     }
+//     return ""
+// }
+
+	       
   func main() {
 	// Test cases
 	fmt.Println(firstNonRepeatingLetter("stress")) // Output: "t"
