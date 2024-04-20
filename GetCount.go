@@ -17,6 +17,15 @@ func myGetCount(str string) (count int) {
     }
   return count
   }
+// func GetCount(str string) (count int) {
+//   for _, c := range str {
+//     switch c {
+//     case 'a', 'e', 'i', 'o', 'u':
+//       count++
+//     }
+//   }
+//   return count
+// }
 func main() {
 	// Test cases
 	fmt.Println(countVowels("hello"))      // Output: 2
