@@ -25,3 +25,9 @@ func firstNonRepeatingLetter(words string) string {
       }
     return ""
 }
+  func main() {
+	// Test cases
+	fmt.Println(firstNonRepeatingLetter("stress")) // Output: "t"
+	fmt.Println(firstNonRepeatingLetter("sTreSS")) // Output: "T"
+	fmt.Printf(firstNonRepeatingLetter("ssttree")) // Output: ""
+}
