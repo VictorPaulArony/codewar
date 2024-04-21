@@ -19,6 +19,9 @@ func summation(num int) int {
 
 	return count
 }
+// func Summation(n int) int {
+//     return n * (n + 1) / 2
+// }
 
 func main() {
 	// Test cases
