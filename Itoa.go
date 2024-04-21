@@ -20,4 +20,21 @@ func main() {
     result := intToString1(num)
     fmt.Println(result) // Output: "123"
 }
-//*******************************************************//
+//**********************************************************************************************************************************//
+package main
+
+import (
+    "fmt"
+    "strconv"
+)
+
+func intToString2(num int) string {
+    return strconv.Itoa(num)
+}
+
+func main() {
+    // Test case
+    num := 123
+    result := intToString2(num)
+    fmt.Println(result) // Output: "123"
+}
