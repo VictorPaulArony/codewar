@@ -25,7 +25,9 @@ func canFormTriangle(a, b, c int) bool {
     return (a+b > c) && (a+c > b) && (b+c > a)
 }
 
-
+// func IsTriangle(a, b, c int) bool {
+//   return a+b > c && b+c > a && a+c > b
+// }
 
 func main() {
     fmt.Println(canFormTriangle(3, 4, 5)) // true
