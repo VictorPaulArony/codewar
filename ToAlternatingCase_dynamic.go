@@ -36,6 +36,18 @@ func ToAlternatingCase(s string) string {
     return string(runes)
 }
 
+// func ToAlternatingCase(str string) string {
+// 	var res string
+// 	for i := 0; i < len(str); i++ {
+// 		if str[i] >= 'A' && str[i] <= 'Z' {
+// 			res += strings.ToLower(string(str[i]))
+// 		} else {
+// 			res += strings.ToUpper(string(str[i]))
+// 		}
+// 	}
+// 	return res
+// }
+
 func main() {
     // Test cases
     fmt.Println(ToAlternatingCase("hello world"))  // Output: "HELLO WORLD"
