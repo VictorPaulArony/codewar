@@ -22,7 +22,7 @@
 // Return every character in its original case
 // Each line is seperated with \n
 // Invalid input ( undefined / null / integer ) should return an empty string
-package kata
+package main
 import ("strings"
         "fmt"
         )
@@ -42,4 +42,8 @@ func SortVowels(s string) string {
     }
   }
 	return res[:len(res)-1]
+}
+func main() {
+	fmt.Println(SortVowels("CODEWARS"))
+	fmt.Println(SortVowels("Rnd Te5T"))
 }
