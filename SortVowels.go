@@ -22,3 +22,24 @@
 // Return every character in its original case
 // Each line is seperated with \n
 // Invalid input ( undefined / null / integer ) should return an empty string
+package kata
+import ("strings"
+        "fmt"
+        )
+func SortVowels(s string) string {
+  if s == "" {
+    return ""
+  }
+  res:= ""
+  vol := "aeiouAEIOU"
+
+  for _, word := range s {
+    if  strings.Contains(vol, string(word)){
+      res += fmt.Sprintf("|%s\n",string(word))
+    } else {
+      res += fmt.Sprintf("%s|\n",string(word))
+      
+    }
+  }
+	return res[:len(res)-1]
+}
