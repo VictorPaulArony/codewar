@@ -18,5 +18,5 @@ func MinMax(arr []int) (int,int) {
 func main() {
     arr := []int{3, 5, 10, 9, 2, 7}
     min, max := MinMax(arr)
-    fmt.Printf("Minimum: %d, Maximum: %d\n", min, max)
+    fmt.Printf("Min: %d, Max: %d\n", min, max)
 }
