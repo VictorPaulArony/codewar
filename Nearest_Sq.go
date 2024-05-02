@@ -27,3 +27,28 @@ func NearestSq(n int) int {
     return res2
   }
 }
+// package kata
+
+// func NearestSq(n int) int {
+//   var min, max int
+  
+//   for i := 1; i < n*n; i++ {
+    
+//     if i*i == n {
+//       return n
+//     }
+    
+//     if i*i < n {
+//       min = i*i
+//     }
+    
+//     if i*i > n {
+//       max = i*i
+//       if n - min < max - n {
+//         return min
+//       }
+//       return max
+//     }
+//   }
+//   return n
+// }
