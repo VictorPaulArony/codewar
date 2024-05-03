@@ -1,4 +1,8 @@
-//package main
+package main
+
+import (
+	"fmt"
+)
 
 func isPrime(num int) bool {
 	if num <= 1 {
@@ -22,8 +26,12 @@ func sumOfPrimes(num int) int {
 	return sum
 }
 
-// func main() {
-//  number := 1000000
-//  result := sumOfPrimes(number)
-//  fmt.Printf("Sum of prime numbers up to %d is: %d", number, result)
-// }
+func printRune(num int) {
+	result := sumOfPrimes(num)
+	fmt.Printf(" %d is: %d", num, result)
+}
+
+func main() {
+	number := 1000000
+	printRune(number)
+}
