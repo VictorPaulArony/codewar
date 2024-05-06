@@ -1,3 +1,10 @@
+package ascii
+
+import (
+	"fmt"
+	"strings"
+)
+
 func printer(str string) []string {
 	var res []string
 	if str == "" {
@@ -8,5 +15,4 @@ func printer(str string) []string {
 		res = append(res, first)
 	}
 	fmt.Print(strings.Join(res, "\n"))
-
 }
