@@ -1,9 +1,13 @@
 package main
 
+import (
+	"fmt"
+
+	"stringtointslice/slice"
+)
+
 func main() {
-	negative.StrisNegative("585")
-	negative.StrisNegative("-58")
-	negative.StrisNegative("55s44")
-	negative.StrisNegative("101-1331")
-	negative.StrisNegative("5544-")
+	fmt.Println(slice.StringToIntSlice("A quick brown fox jumps over the lazy dog"))
+	fmt.Println(slice.StringToIntSlice("Converted this string into an int"))
+	fmt.Println(slice.StringToIntSlice("hello THERE"))
 }
