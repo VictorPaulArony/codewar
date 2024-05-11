@@ -6,29 +6,29 @@
 // * 'abcdef' => ['ab', 'cd', 'ef']
 package main 
 import "fmt"
-func Solution(str string) []string {
-  var res []string 
-  for i := 0;i < len(str);i +=2 {
-    par := str[i:i+2]
-    if len(str)%2 != 0{
-      str += "_" 
-      }
-    res = append(res, par)
-    }
-  return res
-//   }
-// func Solution(s string) (r []string) {
-//   for i := 0; i < len(s); i+=2 {
-//     if i > len(s)-2 {
-//       r = append(r, s[i:] + "_");
-//     } else {
-//       r = append(r, s[i:i+2]);
+// func Solution(str string) []string {
+//   var res []string 
+//   for i := 0;i < len(str);i +=2 {
+//     par := str[i:i+2]
+//     if len(str)%2 != 0{
+//       str += "_" 
+//       }
+//     res = append(res, par)
 //     }
+//   return res
 //   }
-//   return;
-// }
+func Solution(s string) (r []string) {
+  for i := 0; i < len(s); i+=2 {
+    if i > len(s)-2 {
+      r = append(r, s[i:] + "_");
+    } else {
+      r = append(r, s[i:i+2]);
+    }
+  }
+  return;
+}
     func main() {
-	input := ".abcdefghd"
+	input := "abcdefghd"
 	pairs := Solution(input)
 	fmt.Println(pairs)
 }
