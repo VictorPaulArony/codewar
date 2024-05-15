@@ -1,8 +1,8 @@
-package main
+package sample
 
 import "strings"
 
-func Initials(name string) string {
+func Initial(name string) string {
 	// Split the name into first and last name
 	parts := strings.Split(name, " ")
 	// Extract the first letter of each part and convert to uppercase
