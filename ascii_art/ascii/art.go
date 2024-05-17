@@ -15,7 +15,7 @@ func DisplayText(input string, contentLines []string) {
 		fmt.Println()
 		return
 	}
-//make newline and tab printable inthe terminal output
+	// make newline and tab printable inthe terminal output
 	input = strings.ReplaceAll(input, "\n", "\\n")
 	input = strings.ReplaceAll(input, "\\t", "\t")
 
@@ -36,9 +36,9 @@ func DisplayText(input string, contentLines []string) {
 }
 
 // IsEnglish checks if a word contains only English alphabets
-func English(word string) bool {
-	for _, char := range word {
-		if (char < 'a' || char > 'z') && (char < 'A' || char > 'Z') && (char < '0' || char > '9') {
+func English(words string) bool {
+	for _, word := range words {
+		if word < 32 || word > 126 {
 			return false
 		}
 	}
