@@ -7,7 +7,7 @@ package main
 
 //import "fmt"
 
-func doubleArray(arr []int) []int {
+func DoubleArray(arr []int) []int {
     doubled := make([]int, len(arr))
     for i, num := range arr {
         doubled[i] = num * 2

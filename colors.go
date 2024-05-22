@@ -50,7 +50,7 @@ var colorMap = map[string]string{
 // }
 
 // applyColor applies the specified color to the specified letters in the text
-func applyColor(text, letters, color string) string {
+func ApplyColor(text, letters, color string) string {
 	if text == "" {
 		return ""
 	}

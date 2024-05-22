@@ -6,7 +6,7 @@ import (
     "strconv"
 )
 
-func countSheep(num int) string {
+func CountSheep(num int) string {
     res := ""
     for i := 1; i <= num; i++ {
         n := strconv.Itoa(i)
