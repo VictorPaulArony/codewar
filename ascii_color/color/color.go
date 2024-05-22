@@ -1,7 +1,6 @@
 package color
 
 import (
-	"flag"
 	"fmt"
 	"strings"
 )
@@ -18,49 +17,65 @@ var colorMap = map[string]string{
 	"reset":  "\033[0m", // Reset color
 }
 
-func main() {
-	colorPtr := flag.String("color", "", "Color to apply to the text")
-	flag.Parse()
-
-	color := *colorPtr
-	if _, ok := colorMap[color]; !ok {
-		fmt.Println("Invalid color specified.")
+// DisplayText displays the provided text along with content lines
+func DisplayText(input string, contentLines []string, color string, letters string) {
+	if input == "" {
 		return
 	}
 
-	letters := ""
-	args := flag.Args()
-	if len(args) > 0 {
-		letters = args[0]
-	}
+	// Make newline and tab printable in the terminal output
+	input = strings.ReplaceAll(input, "\n", "\\n")
+	input = strings.ReplaceAll(input, "\t", "\\t")
 
-	text := ""
-	if len(args) > 1 {
-		text = strings.Join(args[1:], " ")
-	}
+	wordSlice := strings.Split(input, "\\n")
 
-	coloredText := applyColor(text, letters, color)
-
-	fmt.Println(coloredText)
-	//return coloredText
-}
-
-func applyColor(text, letters, color string) string {
-	if text == "" {
-		return ""
-	}
-
-	if letters == "" {
-		return fmt.Sprintf("%s%s%s", colorMap[color], text, colorMap["reset"])
-	}
-
-	var result strings.Builder
-	for _, char := range text {
-		if strings.ContainsRune(letters, char) {
-			result.WriteString(fmt.Sprintf("%s%c%s", colorMap[color], char, colorMap["reset"]))
+	for _, word := range wordSlice {
+		if word == "" {
+			fmt.Print("\n")
 		} else {
-			result.WriteRune(char)
+			if IsEnglish(word) {
+				PrintWord(word, contentLines, color, letters)
+			} else {
+				fmt.Print("Invalid input: not accepted")
+			}
 		}
 	}
-	return result.String()
+}
+
+// IsEnglish checks if a word contains only printable ASCII characters
+func IsEnglish(word string) bool {
+	for _, char := range word {
+		if char < 32 || char > 126 {
+			return false
+		}
+	}
+	return true
+}
+
+// PrintWord prints a word if it exists in the content lines
+func PrintWord(word string, contentLines []string, color string, letters string) {
+	linesOfSlice := make([]string, 1)
+
+	for _, v := range word {
+		for i := 0; i < 2; i++ {
+			charLine := contentLines[v]
+			if letters == "" || strings.ContainsRune(letters, v) {
+				linesOfSlice[i] += ApplyColor(charLine, letters, color)
+			} else {
+				linesOfSlice[i+1] += charLine
+			}
+		}
+	}
+
+	fmt.Print(strings.Join(linesOfSlice, " "))
+}
+
+// ApplyColor applies the specified color to the text
+func ApplyColor(text, letters, color string) string {
+	colorCode, exists := colorMap[color]
+	if !exists {
+		fmt.Println("Invalid color specified.")
+		return text
+	}
+	return fmt.Sprintf("%s%s%s", colorCode, text, colorMap["reset"])
 }

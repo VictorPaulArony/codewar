@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+
+	"camel_case/camel"
 )
 
 func main() {
-	fmt.Println(CamelCase("hello case"))      // "HelloCase"
-	fmt.Println(CamelCase("camel case word")) // "CamelCaseWord"
+	fmt.Println(camel.CamelCase("hello case"))      // "HelloCase"
+	fmt.Println(camel.CamelCase("camel case word")) // "CamelCaseWord"
 }
