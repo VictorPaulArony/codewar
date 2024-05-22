@@ -14,7 +14,7 @@
 
 package main
 
-import "fmt"
+//import "fmt"
 
 // SortByLength sorts a slice of strings by their lengths in ascending order
 func SortByLength(arr []string) []string {
@@ -30,10 +30,10 @@ func SortByLength(arr []string) []string {
 	return arr
 }
 
-func main() {
-	// Test the SortByLength function
-	strings := []string{"apple", "banana", "cherry", "date", "fig"}
-	fmt.Println("Original slice:", strings)
-	sorted := SortByLength(strings)
-	fmt.Println("Sorted by length:", sorted)
-}
+// func main() {
+// 	// Test the SortByLength function
+// 	strings := []string{"apple", "banana", "cherry", "date", "fig"}
+// 	fmt.Println("Original slice:", strings)
+// 	sorted := SortByLength(strings)
+// 	fmt.Println("Sorted by length:", sorted)
+// }

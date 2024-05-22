@@ -1,3 +1,4 @@
+package main
 func NextBigger(num int) int {
     // Convert the number to a slice of digits
     digits := make([]int, 0)

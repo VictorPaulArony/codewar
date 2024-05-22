@@ -5,7 +5,7 @@
 // a = 1
 // b = 4
 // --> [1, 2, 3, 4]
-package kata
+package main
 
 func Between(a, b int) []int {
     var count []int

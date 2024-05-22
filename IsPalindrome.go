@@ -22,15 +22,15 @@ func IsPalindrome(str string) bool {
 	return true
 }
 
-func main() {
-	// Test cases
-	testCases := []string{"", "a", "radar", "Racecar", "Palindrome", "Madam", "12321", "hello"}
+// func main() {
+// 	// Test cases
+// 	testCases := []string{"", "a", "radar", "Racecar", "Palindrome", "Madam", "12321", "hello"}
 
-	for _, testCase := range testCases {
-		if IsPalindrome(testCase) {
-			println(testCase, "is a palindrome")
-		} else {
-			println(testCase, "is not a palindrome")
-		}
-	}
-}
+// 	for _, testCase := range testCases {
+// 		if IsPalindrome(testCase) {
+// 			println(testCase, "is a palindrome")
+// 		} else {
+// 			println(testCase, "is not a palindrome")
+// 		}
+// 	}
+// }

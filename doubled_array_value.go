@@ -5,7 +5,7 @@
 // [1, 2, 3] --> [2, 4, 6]
 package main
 
-import "fmt"
+//import "fmt"
 
 func doubleArray(arr []int) []int {
     doubled := make([]int, len(arr))
@@ -15,8 +15,8 @@ func doubleArray(arr []int) []int {
     return doubled
 }
 
-func main() {
-    arr := []int{1, 2, 3, 4, 5}
-    doubled := doubleArray(arr)
-    fmt.Println(doubled) // Output: [2 4 6 8 10]
-}
+// func main() {
+//     arr := []int{1, 2, 3, 4, 5}
+//     doubled := doubleArray(arr)
+//     fmt.Println(doubled) // Output: [2 4 6 8 10]
+// }

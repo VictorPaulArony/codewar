@@ -10,12 +10,12 @@ package main
   import "fmt"
   func CreatePhoneNumber(numbers [10]uint) string {
     //to format the phone number string with the desired pattern.
-    phone := fmt.Sprintf("(%d%d%d) %d%d%d-%d%d%d%d", numbers[0], numbers[]1, numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[7], numbers[8], numbers[9],)
+    phone := fmt.Sprintf("(%d%d%d) %d%d%d-%d%d%d%d", numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[7], numbers[8], numbers[9],)
     return phone
     }
-  func main() {
-	// Example usage:
-	numbers := [10]uint{1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
-	result := CreatePhoneNumber(numbers)
-	fmt.Println(result) // Output: "(123) 456-7890"
-}
+//   func main() {
+// 	// Example usage:
+// 	numbers := [10]uint{1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
+// 	result := CreatePhoneNumber(numbers)
+// 	fmt.Println(result) // Output: "(123) 456-7890"
+// }

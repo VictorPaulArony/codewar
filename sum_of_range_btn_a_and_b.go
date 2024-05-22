@@ -11,7 +11,7 @@
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 package main
 
-import "fmt"
+//import "fmt"
 func GetSum(a, b int) int {
   count := 0
     if a > b {
@@ -23,8 +23,8 @@ func GetSum(a, b int) int {
   }
   return count
 }
-func main() {
-    // Get the sum of numbers between 5 and -1
-    sum := GetSum(5, -1)
-    fmt.Println("Sum:", sum) // Output: Sum: 14
-}
+// func main() {
+//     // Get the sum of numbers between 5 and -1
+//     sum := GetSum(5, -1)
+//     fmt.Println("Sum:", sum) // Output: Sum: 14
+// }

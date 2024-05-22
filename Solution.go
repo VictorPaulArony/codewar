@@ -17,7 +17,7 @@
 // M          1,000
 package main
 
-import "fmt"
+//import "fmt"
 
 func intToRoman(num int) string {
     values := []int{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1}
@@ -35,9 +35,9 @@ func intToRoman(num int) string {
     return result
 }
 
-func main() {
-    fmt.Println(intToRoman(1001))  // M
-    fmt.Println(intToRoman(1990))  // MCMXC
-    fmt.Println(intToRoman(2008))  // MMVIII
-    fmt.Println(intToRoman(1666))  // MDCLXVI
-}
+// func main() {
+//     fmt.Println(intToRoman(1001))  // M
+//     fmt.Println(intToRoman(1990))  // MCMXC
+//     fmt.Println(intToRoman(2008))  // MMVIII
+//     fmt.Println(intToRoman(1666))  // MDCLXVI
+// }

@@ -34,8 +34,8 @@ func AlternatingSplit(str string) string {
 	return fmt.Sprintf("%v %v", str1, str2)
 }
 
-func main() {
-	input := "CodeWars"
-	result := AlternatingSplit(input)
-	fmt.Println(result) // Should print "CdWr oeas"
-}
+// func main() {
+// 	input := "CodeWars"
+// 	result := AlternatingSplit(input)
+// 	fmt.Println(result) // Should print "CdWr oeas"
+// }

@@ -5,7 +5,7 @@
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
 package main 
-import "fmt"
+//import "fmt"
 // func Solution(str string) []string {
 //   var res []string 
 //   for i := 0;i < len(str);i +=2 {
@@ -27,9 +27,9 @@ func Solution(s string) (r []string) {
   }
   return;
 }
-    func main() {
-	input := "abcdefghd"
-	pairs := Solution(input)
-	fmt.Println(pairs)
-}
+//     func main() {
+// 	input := "abcdefghd"
+// 	pairs := Solution(input)
+// 	fmt.Println(pairs)
+// }
       

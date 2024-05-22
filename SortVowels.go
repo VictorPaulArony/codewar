@@ -43,7 +43,7 @@ func SortVowels(s string) string {
   }
 	return res[:len(res)-1]
 }
-func main() {
-	fmt.Println(SortVowels("CODEWARS"))
-	fmt.Println(SortVowels("Rnd Te5T"))
-}
+// func main() {
+// 	fmt.Println(SortVowels("CODEWARS"))
+// 	fmt.Println(SortVowels("Rnd Te5T"))
+// }

@@ -31,7 +31,7 @@ func printRune(num int) {
 	fmt.Printf(" %d is: %d", num, result)
 }
 
-func main() {
-	number := 1000000
-	printRune(number)
-}
+// func main() {
+// 	number := 1000000
+// 	printRune(number)
+// }

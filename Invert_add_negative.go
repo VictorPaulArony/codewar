@@ -6,7 +6,7 @@
 // You can assume that all values are integers. Do not mutate the input array/list.
 package main
 
-import "fmt"
+//import "fmt"
 
 func Invert(arr []int) []int {
     var ar []int
@@ -20,9 +20,9 @@ func Invert(arr []int) []int {
     return ar
 }
 
-func main() {
-    // Test cases
-    fmt.Println(Invert([]int{1, 2, 3, 4, 5}))    // Output: [-1, -2, -3, -4, -5]
-    fmt.Println(Invert([]int{1, -2, 3, -4, 5}))  // Output: [-1, 2, -3, 4, -5]
-    fmt.Println(Invert([]int{}))                 // Output: []
-}
+// func main() {
+//     // Test cases
+//     fmt.Println(Invert([]int{1, 2, 3, 4, 5}))    // Output: [-1, -2, -3, -4, -5]
+//     fmt.Println(Invert([]int{1, -2, 3, -4, 5}))  // Output: [-1, 2, -3, 4, -5]
+//     fmt.Println(Invert([]int{}))                 // Output: []
+// }

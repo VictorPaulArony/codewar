@@ -30,8 +30,8 @@ func MultiTable(number int) string {
 	return table
 }
 
-func main() {
-	number := 5
-	table := MultiTable(number)
-	fmt.Println(table)
-}
+// func main() {
+// 	number := 5
+// 	table := MultiTable(number)
+// 	fmt.Println(table)
+// }

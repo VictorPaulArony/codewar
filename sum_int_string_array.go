@@ -4,7 +4,7 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 	"strconv"
 )
 
@@ -22,7 +22,7 @@ func SumMix(arr []interface{}) int {
 	return sum
 }
 
-func main() {
-	arr := []interface{}{1, "2", "3", 9, "5", 6,"7"}
-	fmt.Println(SumMix(arr))
-}
+// func main() {
+// 	arr := []interface{}{1, "2", "3", 9, "5", 6,"7"}
+// 	fmt.Println(SumMix(arr))
+// }

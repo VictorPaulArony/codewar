@@ -12,9 +12,9 @@
 
 package main
 
-import (
-    "fmt"
-)
+// import (
+//     "fmt"
+// )
 
 func ToAlternatingCase(s string) string {
     // Convert the string to a slice of runes
@@ -48,10 +48,10 @@ func ToAlternatingCase(s string) string {
 // 	return res
 // }
 
-func main() {
-    // Test cases
-    fmt.Println(ToAlternatingCase("hello world"))  // Output: "HELLO WORLD"
-    fmt.Println(ToAlternatingCase("HELLO WORLD"))  // Output: "hello world"
-    fmt.Println(ToAlternatingCase("hello WORLD"))  // Output: "HELLO world"
-    fmt.Println(ToAlternatingCase("HeLLo WoRLD"))  // Output: "hEllO wOrld"
-}
+// func main() {
+//     // Test cases
+//     fmt.Println(ToAlternatingCase("hello world"))  // Output: "HELLO WORLD"
+//     fmt.Println(ToAlternatingCase("HELLO WORLD"))  // Output: "hello world"
+//     fmt.Println(ToAlternatingCase("hello WORLD"))  // Output: "HELLO world"
+//     fmt.Println(ToAlternatingCase("HeLLo WoRLD"))  // Output: "hEllO wOrld"
+// }

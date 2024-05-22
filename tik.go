@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -15,41 +16,41 @@ const (
 // Define the Tic-Tac-Toe board
 var board [3][3]string
 
-func main() {
-	// Initialize the board
-	clearBoard()
+// func main() {
+// 	// Initialize the board
+// 	clearBoard()
 
-	// Game loop
-	for {
-		printBoard()
+// 	// Game loop
+// 	for {
+// 		printBoard()
 
-		// Get player input
-		var row, col int
-		fmt.Printf("Player %s's turn (row, col): ", currentPlayer())
-		fmt.Scanln(&row, &col)
+// 		// Get player input
+// 		var row, col int
+// 		fmt.Printf("Player %s's turn (row, col): ", currentPlayer())
+// 		fmt.Scanln(&row, &col)
 
-		// Check if the move is valid
-		if isValidMove(row, col) {
-			board[row][col] = currentPlayer()
+// 		// Check if the move is valid
+// 		if isValidMove(row, col) {
+// 			board[row][col] = currentPlayer()
 
-			// Check for win or draw
-			if checkWin() {
-				printBoard()
-				fmt.Printf("Player %s wins!\n", currentPlayer())
-				break
-			} else if checkDraw() {
-				printBoard()
-				fmt.Println("It's a draw!")
-				break
-			}
+// 			// Check for win or draw
+// 			if checkWin() {
+// 				printBoard()
+// 				fmt.Printf("Player %s wins!\n", currentPlayer())
+// 				break
+// 			} else if checkDraw() {
+// 				printBoard()
+// 				fmt.Println("It's a draw!")
+// 				break
+// 			}
 
-			// Switch players
-			switchPlayer()
-		} else {
-			fmt.Println("Invalid move. Please try again.")
-		}
-	}
-}
+// 			// Switch players
+// 			switchPlayer()
+// 		} else {
+// 			fmt.Println("Invalid move. Please try again.")
+// 		}
+// 	}
+// }
 
 // clearBoard initializes the board with empty spaces
 func clearBoard() {
@@ -144,4 +145,3 @@ func switchPlayer() {
 		}
 	}
 }
-

@@ -12,7 +12,7 @@
 package main
 
 import (
-    "fmt"
+   // "fmt"
     "strings"
 )
 
@@ -39,9 +39,9 @@ func CountDuplicates(input string) int {
     return duplicateCount
 }
 
-func main() {
-    examples := []string{"abcde", "aabbcde", "aabBcde", "indivisibility", "Indivisibilities", "aA11", "ABBA"}
-    for _, example := range examples {
-        fmt.Printf("'%s' -> %d\n", example, CountDuplicates(example))
-    }
-}
+// func main() {
+//     examples := []string{"abcde", "aabbcde", "aabBcde", "indivisibility", "Indivisibilities", "aA11", "ABBA"}
+//     for _, example := range examples {
+//         fmt.Printf("'%s' -> %d\n", example, CountDuplicates(example))
+//     }
+// }

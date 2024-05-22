@@ -3,10 +3,10 @@
 // Note: input will never be an empty string
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+// import (
+// 	"fmt"
+// 	"strings"
+// )
 
 func replaceDigits(s string) string {
 	count := ""
@@ -25,9 +25,9 @@ func replaceDigits(s string) string {
 	return count
 }
 
-func main() {
-	// Test cases
-	fmt.Println(replaceDigits("123456")) // Output: 000111
-	fmt.Println(replaceDigits("987654")) // Output: 111111
-	fmt.Println(replaceDigits("012345")) // Output: 000111
-}
+// func main() {
+// 	// Test cases
+// 	fmt.Println(replaceDigits("123456")) // Output: 000111
+// 	fmt.Println(replaceDigits("987654")) // Output: 111111
+// 	fmt.Println(replaceDigits("012345")) // Output: 000111
+// }

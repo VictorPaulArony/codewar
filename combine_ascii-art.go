@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"os"
+	//"os"
 	"strings"
 )
 
@@ -59,25 +59,25 @@ func PrintWord(word string, contentLines []string) {
 	fmt.Print(strings.Join(linesOfSlice, "\n"))
 }
 
-func main() {
-	// Assuming you want to read from a file named "standard.txt"
-	content, err := os.ReadFile("standard.txt")
-	if err != nil {
-		fmt.Println("Error reading file:", err)
-		return
-	}
+// func main() {
+// 	// Assuming you want to read from a file named "standard.txt"
+// 	content, err := os.ReadFile("standard.txt")
+// 	if err != nil {
+// 		fmt.Println("Error reading file:", err)
+// 		return
+// 	}
 
-	contentLines := strings.Split(string(content), "\n")
+// 	contentLines := strings.Split(string(content), "\n")
 
-	if len(contentLines) != 856 {
-		fmt.Println("The content does not have 856 lines.")
-		return
-	}
+// 	if len(contentLines) != 856 {
+// 		fmt.Println("The content does not have 856 lines.")
+// 		return
+// 	}
 
-	if len(os.Args) < 2 {
-		fmt.Println("Please provide text to display.")
-		return
-	}
+// 	if len(os.Args) < 2 {
+// 		fmt.Println("Please provide text to display.")
+// 		return
+// 	}
 
-	DisplayText(strings.Join(os.Args[1:], ""), contentLines)
-}
+// 	DisplayText(strings.Join(os.Args[1:], ""), contentLines)
+// }

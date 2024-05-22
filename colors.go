@@ -1,7 +1,7 @@
 package main
 
 import (
-	"flag"
+	//"flag"
 	"fmt"
 	"strings"
 )
@@ -18,36 +18,36 @@ var colorMap = map[string]string{
 	"reset":  "\033[0m", // Reset color
 }
 
-func main() {
-	// Define command-line flags
-	colorPtr := flag.String("color", "", "Color to apply to the text")
-	flag.Parse()
+// func main() {
+// 	// Define command-line flags
+// 	colorPtr := flag.String("color", "", "Color to apply to the text")
+// 	flag.Parse()
 
-	// Validate the color flag
-	if _, ok := colorMap[*colorPtr]; !ok {
-		fmt.Println("Invalid color specified.")
-		return
-	}
+// 	// Validate the color flag
+// 	if _, ok := colorMap[*colorPtr]; !ok {
+// 		fmt.Println("Invalid color specified.")
+// 		return
+// 	}
 
-	// Get the letters to be colored, if specified
-	letters := ""
-	args := flag.Args()
-	if len(args) > 0 {
-		letters = args[0]
-	}
+// 	// Get the letters to be colored, if specified
+// 	letters := ""
+// 	args := flag.Args()
+// 	if len(args) > 0 {
+// 		letters = args[0]
+// 	}
 
-	// Get the input text
-	text := ""
-	if len(args) > 1 {
-		text = strings.Join(args[1:], " ")
-	}
+// 	// Get the input text
+// 	text := ""
+// 	if len(args) > 1 {
+// 		text = strings.Join(args[1:], " ")
+// 	}
 
-	// Apply the color to the specified letters or the entire text
-	coloredText := applyColor(text, letters, *colorPtr)
+// 	// Apply the color to the specified letters or the entire text
+// 	coloredText := applyColor(text, letters, *colorPtr)
 
-	// Print the colored text
-	fmt.Println(coloredText)
-}
+// 	// Print the colored text
+// 	fmt.Println(coloredText)
+// }
 
 // applyColor applies the specified color to the specified letters in the text
 func applyColor(text, letters, color string) string {
